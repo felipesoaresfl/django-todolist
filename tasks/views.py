@@ -6,8 +6,10 @@ from django.shortcuts import render
 def helloWorld(request):
     return HttpResponse('Hello World!')
 
+
 def task_list(request):
     return render(request, 'tasks/list.html')
+
 
 def yourname(request, name):
     context = {
